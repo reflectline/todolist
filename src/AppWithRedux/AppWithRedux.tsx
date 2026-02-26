@@ -15,7 +15,7 @@ import {RequestStatusType, SetIsInitializedTC} from './app.reducer';
 import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar';
 import {Navigate, Route, Routes} from 'react-router-dom';
 import {Login} from '../Features/Login/Login';
-import {CircularProgress} from '@mui/material';
+import {Box, CircularProgress} from '@mui/material';
 import {TodoListsWrap} from '../TodoList/TodolistsWrap';
 import {logOutTC} from '../Features/Login/login-reducer';
 import pageNotFoundPhoto from '../assets/images/400.svg';
@@ -40,7 +40,16 @@ function AppWithRedux({demo}: PropsType) {
     }, [])
 
     if (!isInitialized) {
-        return <CircularProgress style={{width: '5%', position: 'fixed', top: '50%', right: '50%',transform: 'translate(-50%, -50%)'}}/>
+        return <Box
+            sx={{
+                position: 'fixed',
+                inset: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+            <CircularProgress />
+        </Box>
     }
 
     return (
