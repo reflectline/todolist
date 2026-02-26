@@ -77,12 +77,12 @@ function AppWithRedux({demo}: PropsType) {
                 <Routes>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/404"
-                           element={<div className={s.pageNotFound}><img src={pageNotFoundPhoto}/>PAGE NOT FOUND
+                           element={<div className={s.pageNotFound}><img src={pageNotFoundPhoto} alt='pageNotFoundPhoto'/>PAGE NOT FOUND
                            </div>}/>
                     <Route path="*" element={<Navigate to="/404"/>}/>
                     <Route path="/login" element={<Login/>}/>
 
-                    <Route path="/Todo-List" element={
+                    <Route path="/todolist" element={
                         <TodoListsWrap demo={demo}/>
                     }/>
                 </Routes>
