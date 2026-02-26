@@ -41,7 +41,7 @@ function AppWithRedux({demo}: PropsType) {
 
 
     if (!isInitialized) {
-        return <CircularProgress style={{width: '5%', position: 'fixed', top: '50%', right: '50%'}}/>
+        return <CircularProgress style={{width: '5%', position: 'fixed', top: '50%', right: '50%',transform: 'translate(-50%, -50%)'}}/>
     }
 
 
@@ -77,8 +77,11 @@ function AppWithRedux({demo}: PropsType) {
                 <Routes>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/404"
-                           element={<div className={s.pageNotFound}><img src={pageNotFoundPhoto} alt='pageNotFoundPhoto'/>PAGE NOT FOUND
-                           </div>}/>
+                           element={
+                                    <div className={s.pageNotFound}>
+                                        <img src={pageNotFoundPhoto} alt='pageNotFoundPhoto'/>
+                                        PAGE NOT FOUND
+                                    </div>}/>
                     <Route path="*" element={<Navigate to="/404"/>}/>
                     <Route path="/login" element={<Login/>}/>
 
