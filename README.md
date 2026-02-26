@@ -1,9 +1,11 @@
-# 📝 TodoList
+# 📝 TodoList  
 
 A clean and simple Todo List application built with **TypeScript**, **React**, **Redux**, and **Material-UI**.  
 Track your tasks, add new todos, update existing ones, and mark them as complete — all with a responsive and modern UI.
 
 🌐 **Live Demo:** [https://reflectline.github.io/todolist](https://reflectline.github.io/todolist)
+
+If the app doesn't load, try using a VPN.
 
 ---
 
