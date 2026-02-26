@@ -39,11 +39,9 @@ function AppWithRedux({demo}: PropsType) {
         dispatch(SetIsInitializedTC())
     }, [])
 
-
     if (!isInitialized) {
         return <CircularProgress style={{width: '5%', position: 'fixed', top: '50%', right: '50%',transform: 'translate(-50%, -50%)'}}/>
     }
-
 
     return (
 
