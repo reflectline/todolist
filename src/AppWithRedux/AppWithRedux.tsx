@@ -105,4 +105,4 @@ function AppWithRedux({demo}: PropsType) {
 }
 
 
-export default AppWithRedux;
+export default AppWithRedux
