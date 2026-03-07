@@ -93,7 +93,7 @@ function AppWithRedux({demo}: PropsType) {
                     <Route path="*" element={<Navigate to="/404"/>}/>
                     <Route path="/login" element={<Login/>}/>
 
-                    <Route path="/todolist" element={
+                    <Route path="/todolist_legacy" element={
                         <TodoListsWrap demo={demo}/>
                     }/>
                 </Routes>
